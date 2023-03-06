@@ -11,5 +11,6 @@
 ` 
 const urlObj = new URL(url);
 `
-.then() | await
-new Promise() | async
+
+| .then() | await |
+| new Promise() | async |
