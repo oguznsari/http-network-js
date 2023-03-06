@@ -5,8 +5,12 @@
 
 1. retrieve-items
 2. url-obj.js
+3. promise.js
 
 # Useful Code Snippets
 ` 
 const urlObj = new URL(url);
+
+.then() | await
+new Promise() | async
 `
