@@ -21,12 +21,12 @@ const urlObj = new URL(url);
 # .then example:
 `
 promise.then((message) => {
-    console.log(`Resolved with ${message}`)
+    console.log('Resolved with ${message}')
 })
 `
 
 # await example:
 `
 const message = await promise 
-console.log(`Resolved with ${message}`)
+console.log('Resolved with ${message}')
 `
