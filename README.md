@@ -12,5 +12,7 @@
 const urlObj = new URL(url);
 `
 
+| Syntax | replaced by |
+| ----------- | ----------- |
 | .then() | await |
 | new Promise() | async |
