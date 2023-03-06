@@ -10,7 +10,6 @@
 # Useful Code Snippets
 ` 
 const urlObj = new URL(url);
-
+`
 .then() | await
 new Promise() | async
-`
