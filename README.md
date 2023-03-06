@@ -6,7 +6,7 @@
 1. retrieve-items
 2. url-obj.js
 
-# useful code snippets
+# Useful Code Snippets
 ` 
-    const urlObj = new URL(url);
+const urlObj = new URL(url);
 `
