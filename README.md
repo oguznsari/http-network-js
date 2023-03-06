@@ -16,3 +16,17 @@ const urlObj = new URL(url);
 | ------- | ------- |
 | .then() | await |
 | new Promise() | async |
+
+
+# .then example:
+`
+promise.then((message) => {
+    console.log(`Resolved with ${message}`)
+})
+`
+
+# await example:
+`
+const message = await promise 
+console.log(`Resolved with ${message}`)
+`
