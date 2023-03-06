@@ -33,17 +33,32 @@ test('normalizeURL strip CAPITALS ', () => {
     expect(output).toEqual(expected)
 })
 
-test('getURLsFromHTML', () => {
+test('getURLsFromHTML absolute', () => {
     const inputHTMLBody = `
         <html>
             <body>
-                <a href="https://blog.boot.dev/">Boot.dev Blog</a>
+                <a href="https://blog.boot.dev/path/">Boot.dev Blog</a>
+            </body> 
+        </html> 
+    `
+    const inputBaseURL = "https://blog.boot.dev/path/"
+    const output = getURLsFromHTML(inputHTMLBody, inputBaseURL)
+    const expected = ["https://blog.boot.dev/path/"]
+
+    expect(output).toEqual(expected)
+})
+
+test('getURLsFromHTML relative', () => {
+    const inputHTMLBody = `
+        <html>
+            <body>
+                <a href="/path/">Boot.dev Blog</a>
             </body> 
         </html> 
     `
     const inputBaseURL = "https://blog.boot.dev"
     const output = getURLsFromHTML(inputHTMLBody, inputBaseURL)
-    const expected = ["https://blog.boot.dev/"]
+    const expected = ["https://blog.boot.dev/path/"]
 
     expect(output).toEqual(expected)
 })
